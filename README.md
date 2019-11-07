@@ -18,6 +18,11 @@ python manage.py runserver
 ```
 
 #Available views
+In order to execute below methods one should call specified url: 
+```
+http://127.0.0.1:8000/main_app/{specified_methid_name}
+```
+
 ## get_average
 Get method returns json with average age for example
 ```
