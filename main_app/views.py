@@ -6,8 +6,6 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import csv
 
-data_query = None
-
 
 def get_average(request):
     """
@@ -46,7 +44,6 @@ def filter_birthday(request):
     :param request: json data
     :return: Json
     """
-    global data_query
     if request.method == 'POST':
         try:
             json_data = json.loads(request.body)
